@@ -1,0 +1,133 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 40px;
+    color: white;
+    background-color: #14213d;
+    height: 100vh;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px; */
+    /* width: 50%; */
+}
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Mulish", sans-serif;
+    color: white;
+}
+form{
+    display: grid;
+    margin-bottom: 20px;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+}
+input{
+    padding: 10px;
+    color: #505050;
+    font-size: 16px;
+    border: 1px solid;
+    margin-bottom: 15px;
+}
+input:hover{
+    border: 2px solid #023e8a;
+}
+select{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+select:hover{
+    border: 2px solid #023e8a;
+}
+option{
+    border: 1px solid;
+}
+label{
+    margin-bottom: 10px;
+}
+.submit-todo, .update-todo{
+    height: 45px;
+    background: #ffdf00;
+    border: none;
+    color: #000000;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-todo:hover{
+    background-color: #ffc300;
+}
+.update-todo:hover{
+    background-color: #ffc300;
+}
+.filter-buttons{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+.filter{
+    text-align: center;
+}
+.filter-btn{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: #354f52;
+    color: white;
+    cursor: pointer;
+}
+
+.filter-btn:hover{
+    background-color: #52796f;
+}
+
+.todo-entries{
+    width: 500px;
+}
+.todo-entry{
+    background: #bebebe;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0.5px rgba(0,0,0,0);
+    background-color: #d8e2dc;
+}
+.todo-entry:hover{
+    border: 1px solid #52796f;
+}
+.priority-btns{
+    display: flex;
+    justify-content: space-between;
+    color: #84a98c;
+}
+.name{
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    color: #354f52;
+}
+.edit{
+    color: green;
+    cursor: pointer;
+}
+.delete{
+    color: red;
+    cursor: pointer;
+}
+
+@media (min-width: 200px) and (max-width: 500px){
+    .container{
+        width: 100%;
+    }
+    .todo-entries{
+        width: 100%;
+    }
+}
